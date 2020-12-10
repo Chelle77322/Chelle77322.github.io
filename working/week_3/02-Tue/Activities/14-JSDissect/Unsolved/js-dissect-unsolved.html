@@ -8,45 +8,51 @@
   </head>
   <body>
     <script type="text/javascript">
-
+    
+//you are asking for their name and getting a boolean answer true or false whether they like cats
+//storing the variables
       var userName = prompt("What's your name?");
       var confirmCats = confirm("Do you like cats?");
-
+//storing the variables
       var petName = "Meeses";
       var petType = "Tuxedo Cat";
       var petAge = 5;
       var petIsCat = true;
-
+//if boolean value is true then the information about the cat is displayed
       if (confirmCats) {
         alert(petName + " " + petType + " " + petAge);
       }
+      //if boolean value is false then the information is not displayed
       else {
         alert("You don't get my cat's information");
       }
-
+//if the boolean value for petIsCat is true then it will run the alert below
       if (petIsCat) {
         alert("My pet is a cat");
       }
+      //if boolean value is false then it will run the alert below
       else {
         alert("My pet is not a cat");
       }
-
+//if the numerical value of petAge is not equal to 7 it will run the alert below
       if (petAge !== 7) {
         alert("My pet is not 7 years old");
       }
-
+//if the numerical value of the variable petAge is equal to 5 it will run the alert below
       if (petAge === 5) {
         alert("My pet is 5 years old");
       }
+      //if the numerical value of the variable petAge is less than 5 it will run the alert below
       else if (petAge < 5) {
         alert("My pet is less than 5 years old");
       }
+      //if the numerical value of the variable petAge is greater than the assigned value it will run the code below
       else {
         alert("My pet is older than 5 years old");
       }
-
+//Will display welcome message with the string value in the variable userName which is gotten from the prompt input
       alert("Welcome to our page " + userName);
-
+//Records the value of catAge that is provided by you in the prompt
       var catAge = prompt("How old is your cat?");
 
       // Won't work as expected

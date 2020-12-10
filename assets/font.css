@@ -1,0 +1,24 @@
+h1{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-feature-settings: "blws";
+font-weight: bold;
+font-style: oblique;
+font-size: 4em;
+}
+
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-feature-settings: "blws";
+    font-size: 2em;
+    line-height: 2.5em;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-feature-settings: "blws";
+    font-size: 1em;
+    
+    line-height: 2.5em;
+    
+}
