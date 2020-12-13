@@ -6,7 +6,6 @@
 
 * Starting from scratch, create a `for` loop that console logs the following lines:
 
-
 ```
 I am 0
 I am 1

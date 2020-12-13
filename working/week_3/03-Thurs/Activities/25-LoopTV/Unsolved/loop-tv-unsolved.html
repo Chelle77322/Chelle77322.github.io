@@ -8,24 +8,24 @@
 
     <script type="text/javascript">
 
-      // ????
+      // Variables for number order of favourite television shows and the name
       var favTVshows = [];
       var tvShow;
 
-      // For Loop Elements Repeats ??? Times
+      // For Loop Elements Repeats 3 Times
       for (var i = 1; i < 4; i++) {
 
-        // ????
+        // Asks the user to put in their favourite tv show in descending order
         tvShow = prompt("What's your #" + i + " favorite TV show?");
 
-        // ????
+        // pushes the input to the variable tvShow
         favTVshows.push(tvShow);
       }
 
-      // ????
+      // While the number of tv shows is less than 4 it will prompt the user for another one
       for (var j = 0; j < favTVshows.length; j++) {
 
-        // ???
+        // Will display favourite television shows in order from 1 - 4
         alert(favTVshows[j]);
       }
 

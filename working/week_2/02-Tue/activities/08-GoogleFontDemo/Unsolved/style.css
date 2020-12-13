@@ -2,30 +2,4 @@
  * Google Fonts Demo
  **/
 
- body{
-     border-top-style: groove;
-     padding-block: 40px;
-     border-color: blueviolet;
-     box-sizing: content-box;
-     background-color: blanchedalmond;
- }
 /* Add in the Google Fonts of your choice */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: unset;
-}
-.container{
-    background-attachment: fixed;
-    padding-block:10px;
-    image-orientation: from-image;
-}
-table{
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-    border-style: dotted;
-}
