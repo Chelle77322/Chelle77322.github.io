@@ -1,0 +1,89 @@
+// Arrays used in password generator and a blank variable array to store the generated random password
+const passArray = [];
+var useLowers = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var useUppers = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var useNumbers = ['1','2','3','4','5','6','7','8','9','0'];
+var useSymbols = ['!','@','#','$','%','^','&','*','(',')','?','/','<','<','{','}','|','~'];
+
+
+// Function to generate password based on user input from prompts and confirms
+
+function generatePassword ()   
+    {
+     var passwordLength = ' ';
+
+//Prompting user for the length of password. 
+//If it meets criteria then will go on too ask for confirmation of characters they want to use
+
+  var passwordLength = ParseInt(prompt("How long do you want your password to be, please choose the number of characters"));
+
+      if (passwordLength < 8 || passwordLength >128)
+        {
+            alert("You must enter a number between 8 and 128");
+            return(""); passwordLength =ParseInt(prompt("How long do you want your password to be, please choose the number of characters"));
+        }
+       
+      
+
+for(var i = 0; i < passwordLength; i++); 
+    {
+      var useLowers = confirm ("Do you want to use lowercase letters for your password");
+      var useUppers = confirm("Do you want to use uppercase letters for your password");
+      var useNumbers = confirm ("Do you want to use numbers letters for your password");
+      var useSymbols = confirm("Do you want to use special characters for your password");
+
+  if (!useLowers ===true && !useUppers === true && !useNumbers === true && !useSymbols === true)
+    {
+  alert("You must choose at least two values for the password generator to work");
+    }
+
+else{     
+        if (useLowers === true)
+	   {
+          	useLowers.splice('');
+          	passArray.push(useLowers);
+          	console.log(passArray.length);
+
+
+ 	    }
+        
+        
+          if (useUppers === true)
+	     {
+           	useUppers.splice('');
+          	passArray.push(useUppers);
+          	console.log(passArray.length);
+
+           
+             }
+       
+       
+        if (useNumbers === true)
+	   {
+		useNumbers.splice('');
+          	passArray.push(useNumbers);
+          	console.log(passArray.length);
+
+       
+           }
+          
+        
+         if (useSymbols === true)
+	    {
+          	useSymbols.splice('');
+          	passArray.push(useSymbols);
+          	console.log(passArray.length);
+
+         
+            }
+       console.log(passArray.toString()); 
+          
+        }
+
+      
+      
+
+       
+var password = document.querySelector("#password"); // Password id text area - This is where the password will be written
+var generate = generatePassword ();// variable that calls the generatePassword function???
+var generatePassEl = document.getElementsByClassName("btn").addEventListener("click", generatePassword());// Button element variable

@@ -4,6 +4,7 @@ var emailInput = document.querySelector("#email");
 var submissionResponseEl = document.querySelector("#response");
 
 submitEl.addEventListener("click", function(event) {
+//prevents the html from deleting information you have put in the form when you F5
   event.preventDefault();
 
   console.log(event);
