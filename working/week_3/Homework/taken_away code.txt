@@ -1,0 +1,16 @@
+  //   console.log(i);
+
+
+    //   //randomly extracts characters from the lowercase array to be used.  
+    //   if (confirmLower === true && confirmUpper === true && confirmNumber === true && confirmSymbol === true) {
+    //     var randNum = Math.floor(Math.random() * useLowers.length + useUppers.length + useNumbers.length + useSymbols.length);
+    //     console.log(randNum);
+
+    //     var random_password = useLowers[randNum]+ useUppers[randNum]+ useNumbers[randNum]+ useSymbols[randNum];
+    //     console.log(random_password);
+    //     passArrays.push(random_password);
+
+
+    //     console.log(passArrays);
+    //   }
+    // }

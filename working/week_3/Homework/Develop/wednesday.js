@@ -36,10 +36,10 @@ function generatePassword ()
    
 for(var i = 0; i < passwordLength; i++); 
     {
-      var useLowers = confirm ("Do you want to use lowercase letters for your password");
-      var useUppers = confirm("Do you want to use uppercase letters for your password");
-      var useNumbers = confirm ("Do you want to use numbers letters for your password");
-      var useSymbols = confirm("Do you want to use special characters for your password");
+      var confirmLowers = confirm ("Do you want to use lowercase letters for your password");
+      var confirmUppers = confirm("Do you want to use uppercase letters for your password");
+      var confirmNumbers = confirm ("Do you want to use numbers letters for your password");
+      var confirmSymbols = confirm("Do you want to use special characters for your password");
 
   if (!useLowers ===true && !useUppers === true && !useNumbers === true && !useSymbols === true)
     {

@@ -87,3 +87,27 @@ else{
 var password = document.querySelector("#password"); // Password id text area - This is where the password will be written
 var generate = generatePassword ();// variable that calls the generatePassword function???
 var generatePassEl = document.getElementsByClassName("btn").addEventListener("click", generatePassword());// Button element variable
+
+
+[Violation] script.js:15 'click' handler took 14878ms
+
+TypeError: Cannot read property  'document' of null
+
+
+
+
+
+      // Add digits to password
+      for (i = 0; i < this.settings.digits; i++) {
+        digit = Math.round(Math.random() * 9);
+        numberIndex = digitsPositionArray[Math.floor(Math.random()*digitsPositionArray.length)];
+
+        passwordArray[numberIndex] =  digit;
+
+        /* remove position from digitsPositionArray so we make sure to the have the exact number of digits in our password
+        since without this step, numbers may override other numbers */
+
+Uncaught TypeError: Assignment to constant variable at HTMLDocument.generatePassword
+
+Uncaught TypeError: passArray.push is not a function at HTMLDocument.generatePassword
+
