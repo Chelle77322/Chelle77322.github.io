@@ -1,0 +1,178 @@
+var javaQuiz = 
+      [
+        {
+          question: "Inside which HTML element do we reference JavaScript",
+          choices: ["<script>", "<javascript>", "<js>", "<title>"],
+          answer: 0
+        },
+	{
+          question: "What is the correct syntax for referring to an external script called "xxx.js"?",
+          choices: ["script = xxx.js", "<script href="xxx.js">", "<script src="xxx.js"> ", "<script name="xxx.js">"],
+          
+	  answer: 2
+        },
+        
+        {
+          question: "What is the correct JavaScript syntax to change the content of the HTML element below?
+			<p id="test">This is a test of your javascript knowledge.</p>",
+          choices: ["document.getElementById("test").innerHTML = "Hello World!",
+		    "document.getElement("p").innerHTML = "Hello World!",
+		    "document.getElementByName("p").innerHTML = "Hello World!",
+		    "#demo.innerHTML = "Hello World!"],
+          answer: 0
+        },
+	{
+          question: "How do you write "Javascript Coding is fun!" in an alert box?",
+          choices: ["alert("Javascript Coding is fun!");",msg("Javascript Coding is fun!");",
+		  "alertBox("Javascript Coding is fun!");", "msgBox("Javascript Coding is fun!");"],
+          
+	answer: 0
+        },
+        
+        {
+          question: "How to write an IF statement in JavaScript?",
+          choices: ["if i = 5 then","if i != 5", "if (i == 5) ", "if i == 5 then"],
+          
+	answer: 2
+        },
+
+	{
+          question: "How do you call a function named "writeAnswer"?",
+          choices: ["call writeAnswer()","writeAnswer()","call function writeAnswer()"],
+          
+	answer: 1
+        },
+
+	{
+          question: "How to write an IF statement for executing some code if "i" is NOT equal to 21?",
+          choices: ["if i =! 21 then","if i == 21","if i <> 21", "if (i != 21)"],
+          
+	answer:3
+        },
+
+	{
+          question: "What is the correct way to write a JavaScript array?",
+          choices: ["var colors = (1:"red", 2:"green", 3:"blue")",
+		     "var colors = ["red", "green", "blue"]",
+		    "var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")",
+		    "var colors = "red", "green", "blue""],
+          
+	answer:1
+        },
+
+	{
+          question: "How do you declare a JavaScript variable?",
+          choices: ["var carName; ","v carName;","carName+=variable", "variable carName;"],
+          
+	answer:0
+        },
+	
+	{
+          question: "Which event occurs when the user clicks on an HTML element?",
+          choices: ["onmouseover","onchange","onclick ", "onmouseclick"],
+          
+	answer:2
+        },
+
+
+
+
+      ];
+
+
+
+
+
+
+
+//MORE JAVA SCRIPT QUESTIONS
+Question 7:
+How do you create a function in JavaScript?
+
+function myFunction()    Your answer  
+function = myFunction()
+function:myFunction()
+
+
+
+
+Question 11:
+How does a WHILE loop start?
+
+while (i <= 10)    Your answer  
+while i = 1 to 10
+while (i <= 10; i++)
+Question 12:
+How does a FOR loop start?
+
+for (i = 0; i <= 5; i++)    Your answer  
+for i = 1 to 5
+for (i <= 5; i++)
+for (i = 0; i <= 5)
+Question 13:
+How can you add a comment in a JavaScript?
+
+//This is a comment    Your answer  
+<!--This is a comment-->
+'This is a comment
+Question 14:
+How to insert a comment that has more than one line?
+
+/*This comment has
+more than one line*/    Your answer  
+//This comment has
+more than one line//
+<!--This comment has
+more than one line-->
+
+Question 16:
+How do you round the number 7.25, to the nearest integer?
+
+Math.round(7.25)    Your answer  
+round(7.25)
+rnd(7.25)
+Math.rnd(7.25)
+Question 17:
+How do you find the number with the highest value of x and y?
+
+Math.max(x, y)    Your answer  
+top(x, y)
+Math.ceil(x, y)
+ceil(x, y)
+Question 18:
+What is the correct JavaScript syntax for opening a new window called "w2" ?
+
+w2 = window.new("http://www.w3schools.com");    Your answer  
+w2 = window.open("http://www.w3schools.com");    Correct answer  
+Question 19:
+JavaScript is the same as Java.
+
+True    Your answer  
+False    Correct answer  
+Question 20:
+How can you detect the client's browser name?
+
+browser.name    Your answer  
+client.navName
+navigator.appName    Correct answer  
+
+Question 22:
+
+Question 23:
+Which operator is used to assign a value to a variable?
+
+=    Your answer  
+-
+x
+*
+Question 24:
+What will the following code return: Boolean(10 > 9)
+
+false    Your answer  
+NaN
+true    Correct answer  
+Question 25:
+Is JavaScript case-sensitive?
+
+Yes    Your answer  
+No

@@ -1,0 +1,63 @@
+/*stylesheet settings for the online javascript quizz*/
+/*Declaration of font style settings and body html settings*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #203143;
+    color: antiquewhite;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 10px;
+    justify-content: space-around;
+
+}
+/*Further font styling for the Javascript Online Quizz*/
+h1.banner{
+    font-size: 62pt;
+    text-align: center;
+}
+p.questions{
+    color: #203143;
+    font-size: 14px;
+}
+p.answers{
+    color: #203143;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/*Style settings for the container div*/
+.container{
+
+}
+/*Style settings for the wrapper div */
+.wrapper{
+background-image:url("../images/wrap_image.jpeg");
+background-position: center;
+background-size: cover;
+max-width:100%;
+height:150px;
+
+padding-top: 0%;
+margin-top: 0%;
+
+}
+/*Style settings for the rows in the grid container*/
+.row{
+    background-color: #e7f0f7;
+    width: 75%;
+    height:auto;
+
+}
+/*Style settings for the grid columns */
+.col-md-12{
+
+}
+/*Style settings for the footer div*/
+
+.footer{
+
+}
