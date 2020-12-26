@@ -1,66 +1,128 @@
-/*stylesheet settings for the online javascript quizz*/
-/*Declaration of font style settings and body html settings*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-   }
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #203143;
-    color: antiquewhite;
-    margin: 0 auto;
-    padding-left: 5px;
+/*Style Sheet to be used for the online javascript quiz webpage*/
+*{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
     padding-right: 10px;
-    justify-content: space-around;
+    padding-left: 10px;
 
 }
-/*Further font styling for the Javascript Online Quizz*/
-h1.banner{
-    font-size: 62pt;
+/*Declaring background colour, font colour, font-family and variant to be used through out the webpage*/
+body{
+    background-color:#01295c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-variant: small-caps;
+    color: #efe9e5;
+}
+
+/*Declaring the font size and headings 1 - 6 to be used in the online javascript quiz webpage*/
+/*To be used pver the banner image*/
+.h1-banner{
+    font-size: 88px;
+    font-weight: bolder;
     text-align: center;
+    text-shadow: #01295c;
+    text-decoration-color: #efe9e5;
+    text-transform: capitalize;
+    margin-left: 5px;
+    float: right
+;
 }
-p.questions{
-    color: #203143;
+.h1{
+    font-size: 48px;
+    font-weight: bolder;
+   
+
+}
+.h2{
+    font-size: 42px;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+.h3{
+
+    font-size: 36px;
+   
+}
+
+.p.questions{
     font-size: 14px;
+
 }
-p.answers{
-    color: #203143;
+.p.answers{
     font-size: 14px;
-    text-decoration: underline;
-}
-/*Style settings for the container div*/
-.container{
-
-}
-/*Style settings for the wrapper div */
-.topBanner{
-background-image:url("../images/wrap_image.jpeg");
-background-position: center;
-background-size: cover;
-max-width:100%;
-height:150px;
-
-padding-top: 0%;
-margin-top: 0%;
-
-}
-/*Style settings for the rows in the grid container*/
-.questionRow{
     
-    background-color: #e7f0f7;
-    width: 75%;
-    height:auto;
-}
-/*Style settings for the grid columns */
-.answerRow{
-    background-color: #e7f0f7;
-    width: 75%;
-    height:auto;
 
 }
-/*Style settings for the footer div*/
+p.footer{
+    font-size: 8px;
+    text-decoration-color: #01295c;
+    text-align: center;
+    text-transform: capitalize;
+
+
+}
+/*Style settings used for the banner of the webpage*/
+.wrapper{
+    background-image: url("/Users/Chelle/Chelle77322.github.io/javascript_quizz/assets/images/computercode.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    height: 150px;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+
+}
+/*Style settings used for the container div of the webpage that encompasses all bootstrap grid configurations*/
+.container{
+    background-color:#075aaa;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    background-position: center;
+    float: left;
+    margin-right: 20px;
+
+
+}
+
+
+/*This section has the timer row and the start quiz button in it*/
+.timer{
+    background-color: #efe9e5;
+    
+}
+/*This is the style sheet for the start quiz buttong*/
+.startQuizBTN {
+    background-color:#eb2226;
+    border:groove;
+    color: white;
+    padding: 30px 62px;
+    text-align: center;
+    text-decoration:solid;
+    display: inline-block;
+    font-size: 20px;
+    font-style: oblique;
+  }
+
+
+.questions{
+    background-color: #efe9e5;
+    width: auto;
+    margin-top:250px;
+    clear: both;
+
+}
+.answers{
+    background-color: #efe9e5;
+}
 
 .footer{
-
+    padding-bottom: 10px;
+    background-attachment: fixed;
+    background-color: #efe9e5;
+ 
 }
