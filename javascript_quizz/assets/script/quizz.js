@@ -1,9 +1,12 @@
 //Declaring the variables to be used for the online quiz
 var questions = document.getElementById('questions')
 var answers = document.getElementById('answers')
-var submitEl = document.getElementById('submitBTN')
 var quizTimer = document.getElementById('timer')
 var countdown = document.getElementById('countdown')
+
+
+var submitEl = document.querySelector('#submitBTN')
+var startQuizEl = document.querySelector('#startQuizBTN')
 
 /*Possibly need to create an array to hold the question array for the length of questions I have??? */
 
@@ -96,26 +99,91 @@ var javaQuiz =
 
 
 ];
-
-
+var quizQuestions = arrayQuestions (question_1, question_2, question_3, question_4, question_5, question_6, question_7, question_8, question_9, question_10);
 
 //This is the function that will store the java script quiz questions and add them to the question section of the html page in sequential order
 //until the timer has run out or all questions have been answered
 function quizQuestions(){
 //randomise the questions
         var showQuestion =[];
+        quizQuestions.sort(() => Math.random()* arrayQuestions.length);
+        shuffle(arrayQuestions);
+        return showQuestion;
+        var userChoice = '';
         //this is where a for loop will go
 
 }
 //This is the function that will show the answers to the quiz questions
 function showAnswers(){
+        var showAnswer = [];
+//radio button dependent on choice from quizQuestions function above.
+//Need to store user choices in variable userChoice
 
 
 }
 
+//this should start the countdown and should call the quizTimer function and preceding functions to display timer while the quiz is going on
+function setcountdown() {
+        countdownEl.textContent = timer;
+      }
+      
+      startQuizEl.addEventListener("click", function() {
+        timer++;
+        setcountdown();
+      });
+      
 //This is the timer function that will show a countdown of timem left to complete the quiz
 function quizTimer(){
+        return formatMinutes, formatSeconds;
+        
+//declaring time variables to be used for countdown clock timer
+var secondsRemain = 0
+var secondsinTotal = 0
+var lapsedSeconds = 0
+var minutesRemain = 0
+var formatMinutes = 0
+var formatSeconds = 0
+
+//where does the countdown come from ? - Need to set countdown to 5:00
+var countdown = 0
+
+
+while (countdown != 0) {
+getTimePreferences();
+ 
+// These two functions are just for making sure the numbers look nice for the html elements
+function getFormatMinutes() {
+  //
+  var secondsRemain = secondsinTotal - lapsedSeconds;
+
+  var minutesRemain = Math.floor(secondsRemain / 60);
+
+  var formatMinutes;
+
+  if (minutesRemain < 10) {
+    formatMinutes = "0" + minutesRemain;
+  } else {
+    formatMinutes = minutesRemain;
+  }
+
+  return formatMinutes;
+}
+
+function getFormatSeconds() {
+  var secondsRemain = (secondsinTotal - lapsedSeconds) % 60;
+
+  var formatSeconds;
+
+  if (secondsRemain < 10) {
+    formatSeconds = "0" + secondsRemain;
+  } else {
+    formatSeconds = secondsRemain;
+  }
+
+  return formattedSeconds;
+}
+}
 
 }
 //When submit button is pressed - answers to the quizz questions will be shown
-//submitEl.addEventListener('click',showAnswers);
+submitEl.addEventListener('click',showAnswers);

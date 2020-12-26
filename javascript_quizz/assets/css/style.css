@@ -34,7 +34,7 @@ p.answers{
 
 }
 /*Style settings for the wrapper div */
-.wrapper{
+.topBanner{
 background-image:url("../images/wrap_image.jpeg");
 background-position: center;
 background-size: cover;
@@ -46,14 +46,17 @@ margin-top: 0%;
 
 }
 /*Style settings for the rows in the grid container*/
-.row{
+.questionRow{
+    
     background-color: #e7f0f7;
     width: 75%;
     height:auto;
-
 }
 /*Style settings for the grid columns */
-.col-md-12{
+.answerRow{
+    background-color: #e7f0f7;
+    width: 75%;
+    height:auto;
 
 }
 /*Style settings for the footer div*/
