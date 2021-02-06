@@ -11,13 +11,13 @@
 
 <!--Location of all Stylesheets used-->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"/>
-        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Slim">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Cut">
-        <link rel = "stylesheet" href = "./assets/css/style.css">
+        <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Slim"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Cut"/>
+        <link rel = "stylesheet" href = "./assets/css/style.css"/>
+
+
 <!-- Location of all script links and files used-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Base64/1.1.0/base64.min.js"></script>
@@ -26,11 +26,10 @@
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
       <script src="./assets/script/script.js"></script>
       
-   
-  
-        <title>Michelle Hall Web Development Portfolio</title>
+<!-- Title of Webpage-->   
+  <title>Michelle Hall Web Development Portfolio</title>
+</head>
 
-    </head>
     <body>
         <!-- Start Top Bar -->
     <div class="top-bar">
@@ -38,7 +37,7 @@
           <ul class="menu">
             <li class="menu-text"></li>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="top-bar-right">
@@ -51,61 +50,79 @@
           </ul>
         </div>
       </div>
-      <!-- End Top Bar -->
-  
+<!-- End Top Bar -->
+<!--Banner section of webpage-->  
       <div class="callout large">
         <div class="row column text-center">
           <h1 class = "h1">Developing Innovative Designs</h1>
           <p class="lead"></p>
-          
         </div>
       </div>
-  
-      <div class="row">
-    
-        <div class="medium-6 columns medium-pull-6">
-          <h2 class = "h2">Recent Work</h2>
-        <hr>
-    <div class="row medium-up-3 large-up-4">
-        <div class="column">
-          <img class="thumbnail"  alt = "Catch-Source-Style" src="./assets/images/catch.jpg">
-          <p>Catch - Source - Style
-            Description: A color and font selection tool for web designers and developers.
-            Languages and technologies used : Html, CSS,javascript, jQuery, Ajax, base64, FileReader,
-            Google Font API, Imagga API
-            <a href = "https://chelle77322.github.io/Catch-Source-Style/"></a>Catch-Source Style</p>
-        </div>
-        <div class="column">
-          <img class="thumbnail" alt = "Keep the Weather with you"src="./assets/images/weather.jpg">
-        </div>
-        <div class="column">
-          <img class="thumbnail"  alt = "Simple Daily Planner" src="./assets/images/scheduler.jpg">
-        </div>
-      </div>
-  <hr>
-  
-      <div class="row column">
-        <ul class="vertical medium-horizontal menu expanded text-center">
-          <li><img class="thumbnail"  alt = "ghost_trees" src="./assets/images/ghost_trees.jpg"></li>
-          <li><img class="thumbnail"  alt = "Madonna" src="./assets/images/Madonna.jpg"></li>
-          <li><img class="thumbnail"  alt = "matize" src="./assets/images/matize.jpg"></li>
-          <li><img class="thumbnail"  alt = "dragonfly" src="./assets/images/dragonfly.jpg"></li>
-        
-        </ul>
-      </div>
-  
-      <hr>
+<!-- Main editable section of webpage-->  
+<div class="row">
+<h2 class = "h2">Recent Work</h2>
 
-      
-      <hr>
-  
-      
-  
-      
-    </body>
-  
+<!-- Catch Source Style Section-->
+       <div class="work-feature-block row">
+          <div class="columns medium-7">
+            <a href = "https://chelle77322.github.io/Catch-Source-Style/"><img class="work-feature-block-image" alt = "Catch-Source-Style" src="./assets/images/catch.jpg"></a>
+          </div>
+          <div class="columns medium-5">
+            <h3 class="h3">Catch Source Style</h3>
+            <p>A quick and  efficient web design tool that allows the user to preview font selections and colour selections from image uploads  </p>
+            <h3 class = "h3">Project Details</h3>
+            <ul>
+              <li>HTML5 - Responsive Design</li>
+              <li>Bulma - CSS Framework</li>
+              <li>Google Font API</li>
+              <li>Imagga API</li>
+              <li>FileReader API</li>
+              <li>Ajax</li>
+              <li>Base64.js</li>
+          </ul>
+          </div>
+        </div>
+<!--Keep the Weather with you Section-->
+<div class="work-feature-block row">
+            <div class="columns medium-7">
+              <a href = "https://chelle77322.github.io/Weather_with-you/"><img class="work-feature-block-image"alt = "Keep the Weather with you"src="./assets/images/weather.jpg"></a>
+            </div>
+            <div class="columns medium-5">
+              <h3 class="h3">Keep the Weather with you</h3>
+              <p>A simple weather app that allows you to search for the weather in any city around the world.<br>
+              It will return the current temperature, the humidity, windspeed and UV rating.<br>
+              You can also preview a 7 day forecast as well for the city you searched for</p>
+              <h3 class = "h3">Project Details</h3>
+              <ul>
+                <li>HTML5 - Responsive Design</li>
+                <li>Bootstrap - CSS Framework</li>
+                <li>Open Weather Map API</li>
+                <li>Ajax</li>
+                <li>Javascript</li>
+                <li>JQuery</li>
+              </ul>
+            </div>  
+          </div>
+<!-- Simple Daily Planner Section-->
+          <div class="work-feature-block row">
+            <div class="columns medium-7">
+              <a href = "https://chelle77322.github.io/weekly_organiser/index.html"><img class="work-feature-block-image"alt = "Live Daily Planner"src="./assets/images/scheduler.jpg"/></a>
+            </div>
+            <div class="columns medium-5">
+              <h3 class="h3">Daily Planner</h3>
+              <p>A simple autogenerating daily planner that allows the user to enter information<br>
+              Timeslots are colour coded based on whether they are in the past present of future</p>
+              <h3 class = "h3">Project Details</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>JQuery</li>
+                <li>Bootstrap - CSS Framework</li>
+                <li>HTML5 - Responsive Design</li>
+              </ul>
+            </div>  
+          </div>   
+    </div>     
+    </div>
 
-   
-       
-       
+</body>
 </html>
