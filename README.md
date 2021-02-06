@@ -5,7 +5,8 @@ Join me on my journey to become a full-stack web developer
 
 # Description:
 A showcase of my skills in both front-end and back-end coding to potential clients and employers
-Screenshots
+
+# Screenshots
 ![Image of homepage](./assets/images/homepage.jpg)
 ![Image of contact](./assets/images/contact.jpg)
 ![Image of about](./assets/images/about.jpg)
