@@ -155,7 +155,7 @@ body {
 
   .hero-section {
     margin-top:100px;
-    background-image: url("../images/banner.jpg");
+    background-image: url("./assets/images/banner.jpg");
     background-size: cover;
     height:85%;
     background-repeat: no-repeat;
