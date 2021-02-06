@@ -83,18 +83,23 @@ body {
   
 /*Style settings for the contact page portfolio card section*/ 
 .card-user-container {
-    margin-bottom: 1rem;
-    background-color: #fefefe;
-    color: #0a0a0a;
+    margin-bottom: 2rem;
+    background-color:#cbe7e3;
+    background-blend-mode: multiply;
+    stop-color: #748684;
+    flood-color: #cbe7e3;
+    
+    color:#cacaca;
     overflow: hidden;
     padding: 0;
-    border-radius: 0;
+    border-radius: 10%;
+    border-color: #918f8f;
+    border-style: groove;
   }
   
   .card-user-container .card-user-avatar .user-image {
     display: block;
     margin: auto;
-    border-radius: 50%;
     width:auto;
     height:auto;
     padding: 0.9375rem;
@@ -107,14 +112,14 @@ body {
   }
   
   .card-user-container .card-user-bio {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
   }
   
   .card-user-container .card-user-bio .location {
     display: inline-block;
     margin: 0 0.9375rem;
-    color: #cacaca;
+    color:#cacaca;
     font-size: 0.875rem;
   }
   
@@ -125,7 +130,7 @@ body {
   }
   
   .card-user-container .card-user-social {
-    background:#cacaca;
+    background:#39373b;
     padding: 1rem;
     text-align: center;
   }
@@ -166,42 +171,66 @@ body {
   } 
     .hero-section-text {
       color:#f0eeee;
-      text-shadow: 2px 2px 4px #222122;
+      text-shadow: 1px 1px 2px #222122;
     }
  /*Style settings for social buttons - LinkedIn and GitHub*/ 
+ @charset "UTF-8";
 
-
-.rounded-social-buttons {
-  text-align: center;
-}
-.rounded-social-buttons .social-button.linkedin:before {
-    font-family: "FontAwesome";
-    content: "";
-  }
-  
-  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-    color: #007bb5;
-    background:#cacaca;
-    border-color: #007bb5;
-  }
-  
-  .rounded-social-buttons .social-button.github {
-    background: #000000;
-  }
-  
-  .rounded-social-buttons .social-button.github:before {
-    font-family: "FontAwesome";
-    content: "";
-  }
-  
-  .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
-    color: #000000;
-    background:#cacaca;
-    border-color: #000000;
-  }
-      
-
-
+ .rounded-social-buttons {
+   text-align: center;
+ }
+ 
+ .rounded-social-buttons .social-button {
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+   width: 3.125rem;
+   height: 3.125rem;
+   border: 0.125rem solid transparent;
+   padding: 0;
+   text-decoration: none;
+   text-align: center;
+   color:#fefefe;
+   font-size: 1.5625rem;
+   font-weight: normal;
+   line-height: 2em;
+   border-radius: 1.6875rem;
+   transition: all 0.5s ease;
+   margin-right: 0.25rem;
+   margin-bottom: 0.25rem;
+ }
+ 
+ .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+   -webkit-transform: rotate(360deg);
+       -ms-transform: rotate(360deg);
+           transform: rotate(360deg);
+ }
+ .rounded-social-buttons .social-button.linkedin {
+   background: #007bb5;
+ }
+ 
+ .rounded-social-buttons .social-button.linkedin:before {
+   font-family: "FontAwesome";
+   
+ }
+ 
+ .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+   color: #007bb5;
+   background: #fefefe;
+   border-color: #007bb5;
+ }
+ 
+ .rounded-social-buttons .social-button.github:before {
+   font-family: "FontAwesome";
+   
+ }
+ 
+ .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+   color: #000000;
+   background:#39373b;
+   border-color:#fefefe;
+ }
+ 
 .footer {
     padding: 30px;
     clear: both;
