@@ -33,7 +33,7 @@ body {
 .thumbnail{
     padding: 5px;
     height:300px;
-    width: 300px;
+    width: 275px;
 
 }
 .thumbnail-profile{
@@ -41,6 +41,11 @@ body {
     height:auto;
     width: auto;
 
+}
+.lead{
+    float: inline-end;
+    font-family:'Nova Slim', sans-serif;
+    font-size: 18px;
 }
 
 .h1{
@@ -109,7 +114,7 @@ body {
   .card-user-container .card-user-bio .location {
     display: inline-block;
     margin: 0 0.9375rem;
-    color: #767676;
+    color: #cacaca;
     font-size: 0.875rem;
   }
   
@@ -120,7 +125,7 @@ body {
   }
   
   .card-user-container .card-user-social {
-    background:#39373b;
+    background:#cacaca;
     padding: 1rem;
     text-align: center;
   }
@@ -149,9 +154,12 @@ body {
 /*Styling section for main section of contact and home page*/
 
   .hero-section {
-    background: url("./assets/images/background.jpg");
+    margin-top:100px;
+    background-image: url("../images/banner.jpg");
     background-size: cover;
-    height:auto;
+    height:85%;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     display: flex;
     justify-content:space-around;
@@ -160,9 +168,38 @@ body {
       color:#f0eeee;
       text-shadow: 2px 2px 4px #222122;
     }
+ /*Style settings for social buttons - LinkedIn and GitHub*/ 
+
+
+.rounded-social-buttons {
+  text-align: center;
+}
+.rounded-social-buttons .social-button.linkedin:before {
+    font-family: "FontAwesome";
+    content: "";
+  }
   
+  .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background:#cacaca;
+    border-color: #007bb5;
+  }
   
-    
+  .rounded-social-buttons .social-button.github {
+    background: #000000;
+  }
+  
+  .rounded-social-buttons .social-button.github:before {
+    font-family: "FontAwesome";
+    content: "";
+  }
+  
+  .rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+    color: #000000;
+    background:#cacaca;
+    border-color: #000000;
+  }
+      
 
 
 .footer {
