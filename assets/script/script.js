@@ -1,18 +1,16 @@
 $(document).ready(function(){
+    const fs = require('fs');
+
+let file = "./assets/files/Michelle_Hall_Resume.pdf";
    
-    function download(filename, text) {
-        var element = document.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-        element.setAttribute('download', filename);
-      
-        element.style.display = 'none';
-        document.body.appendChild(element);
-      
-        element.click();
-      
-        document.body.removeChild(element);
-      }
-      
-      // Start file download.
-      download("hello.txt","This is the content of my file :)");
-    });  
+//Adding the code to download and save the resume file
+$("#resumeBTN").click(function ResumeDownload(){
+function ResumeDownload(file){
+    FileSaver.saveAs(file, "./assets/files/Michelle_Hall_Resume.pdf");
+
+}
+console.log(file);
+
+});
+    
+});
