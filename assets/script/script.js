@@ -1,16 +1,12 @@
 $(document).ready(function(){
     const fs = require('fs');
+    let $resume = $('#resumeBTN');
+    $resume.click(function(){
+    let path = './assets/files/Michelle_Hall_Resume.pdf';
+    fs.readFile(path, 'utf8', (error, data) =>
+    error ? console.error(error) : console.log(data)
 
-let file = "./assets/files/Michelle_Hall_Resume.pdf";
-   
-//Adding the code to download and save the resume file
-$("#resumeBTN").click(function ResumeDownload(){
-function ResumeDownload(file){
-    FileSaver.saveAs(file, "./assets/files/Michelle_Hall_Resume.pdf");
-
-}
-console.log(file);
-
+    );
 });
-    
+
 });
