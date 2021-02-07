@@ -11,7 +11,7 @@
   "name": "Chelle77322.github.io",
   "description": "GitHub Pages Personal Bio\r This is my personal portfolio project while I am studying to become a full stack developer. It will document the progress made as the course progresses",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

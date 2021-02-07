@@ -1,22 +1,21 @@
-$(document).ready(function(){
-    var requirejs = require('requirejs');
+'use strict';
+var express = require('express');
+var path = require('path');
 
-requirejs.config({
-    //Pass the top-level main.js/index.js require
-    //function to requirejs so that node modules
-    //are loaded relative to the top-level JS file.
-    nodeRequire: require
-});
-    const fs = require('fs');
-    let $resume = $('#resumeBTN');
-    $resume.click(function(){
-    let path = './assets/files/Michelle_Hall_Resume.pdf';
-    fs.readFile(path, 'utf8', (error, data) =>
-    error ? console.error(error) : console.log(data)
+var app = express();
 
-    );
+
+app.use('/static', express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, '..', 'dist')));
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-
+app.get('/file', function(req, res) {
+  res.download('static/Michelle_Hall_Resume.pdf');
 });
 
+app.listen(5000, function() {
+    console.info('Server listening on port 5000');
+});
